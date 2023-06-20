@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  backend:
+    build: app 
+    ports:
+      - '80:80'
+    expose:
+      - '80'
+
+  frontend:
+    build: front 
+    ports:
+      - '8501:8501'
+    expose:
+      - '8501'
+  logger:
+    build: logger
+    ports:
+      - '8000:8000'
+      - '8000'
