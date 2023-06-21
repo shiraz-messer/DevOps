@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: geolocation
+  labels:
+    app: geolocation
+spec: 
+  replicas: 2
+  selector:
+    matchLabels:
+      app: geolocation
+  template:
+    metadata:
+      labels:
+          app: geolocation
+    spec:
+      containers:
+      - name: geolocation
+        image: devops-frontend
+        imagePullPolicy: Never
+        ports: 
+        - containerPort: 8501
+
+  # kubectl apply -f deployment.yaml
