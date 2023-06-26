@@ -13,7 +13,7 @@ Searching for cities in Israel in both Hebrew and English and displaying their l
 - [Requirments](#Requirments)
 - [Set-up](#set-up)
 - [Deployment](#Deployment)
-- [Architecture](#architecture)
+- [Architecture](#Architecture)
 - [Technologies](#technologies)
 - [App-Design](#App-Design)
 
@@ -66,12 +66,17 @@ kubectl get  <TYPE> // pods / deployment / service
 kubectl describe service geolocation 
 ```
 
-## architecture 🚧
+## Architecture 🚧
 This project adheres to a microservice architecture. The primary components of this architecture are:
+
 Frontend: is built with Streamlit, providing a map interface to view the accurate location by user typed the city he wishes to see - in both Hebrew and English (see city.csv on app folder).
+
 Backend and logger: are built with FastAPI.
+
 Docker: Docker is utilized for containerization and deployment. Dockerfiles and Docker Compose are employed to define and build containers for the frontend, backend, and Jenkins.
+
 Kubernetes: Kubernetes Minikube is a tool used for container orchestration. It helps manage the deployment and scaling of containers. 
+
 Jenkins: automation tool used for continuous integration and delivery, and the Jenkinsfile is a script that defines the steps and configuration for a Jenkins pipeline, allowing for efficient and automated software development workflows. 
 
 ## Technologies 🖥
