@@ -11,7 +11,6 @@ Searching for cities in Israel in both Hebrew and English and displaying their l
 ## Table of Contents 📝
 - [App Demo](#App-Demo)
 - [Requirments](#Requirments)
-- [Set-up](#set-up)
 - [Deployment](#Deployment)
 - [Architecture](#Architecture)
 - [Technologies](#technologies)
