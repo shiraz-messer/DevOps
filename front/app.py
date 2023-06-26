@@ -4,7 +4,7 @@ import folium
 import requests
 
 
-st.title("GIS", anchor=None)
+st.title("Devops - GeoLocation", anchor=None)
 
 user_input = st.text_input(
     "Enter city name here 👇", placeholder="Example: Tel Aviv-Yafo"
