@@ -4,7 +4,7 @@ import folium
 import requests
 
 
-st.title("Devops - Geolocation", anchor=None)
+st.title("GIS", anchor=None)
 
 user_input = st.text_input(
     "Enter city name here 👇", placeholder="Example: Tel Aviv-Yafo"
@@ -22,6 +22,7 @@ if user_input:
         flag = "\u0590" <= user_input[0] <= "\u05EA"
         if flag:
             res = requests.get("http://backend:80/he/" + user_input)
+            res2 = requests.get("http://logger:8000/" + user_input)
             data = res.json()
             x = data["res"]["x"]
             y = data["res"]["y"]
@@ -31,6 +32,7 @@ if user_input:
                 st.warning("Invalid input", icon="⚠️")
         else:
             res = requests.get("http://backend:80/en/" + user_input)
+            res2 = requests.get("http://logger:8000/" + user_input)
             data = res.json()
             x = data["res"]["x"]
             y = data["res"]["y"]
