@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/108284950/218329685-c8b335ed-581a-4c37
 ## Deployment 🚀
 
 ### Docker
-1.	Open the git BASH Terminal, go inside your desired folder and run the following command: 🧑‍💻
+1.	Open the Git BASH Terminal, go inside your desired folder and run the following command: 🧑‍💻
 ```bash
 git clone https://github.com/shiraz-messer/DevOps.git
 ```
