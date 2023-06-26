@@ -4,7 +4,7 @@
 
 ## Introduction
 Final DevOps Course Project HIT:
-This DeOps project is based on microservices architecture using Docker and Kubernetes, Jenkins, and CI/CD pipeline.
+This DevOps project is based on microservices architecture using Docker and Kubernetes, Jenkins, and CI/CD pipeline.
 Our  GeoLocation App:
 Searching for cities in Israel in both Hebrew and English and displaying their locations on a map.
 
