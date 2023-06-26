@@ -92,7 +92,7 @@ Jenkins: automation tool used for continuous integration and delivery, and the J
   - CI/CD Pipline 
   - Jenkins Job
 
-## App-Design
+## App-Design 🎨
 ![image](https://user-images.githubusercontent.com/108284950/218329974-d02f1b26-5b0f-43a9-860a-43f03f63b803.png)
 
 
