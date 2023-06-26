@@ -8,7 +8,7 @@ This DeOps project is based on microservices architecture using Docker and Kuber
 Our  GeoLocation App:
 Searching for cities in Israel in both Hebrew and English and displaying their locations on a map.
 
-## Table of Contents
+## Table of Contents 📝
 - [App Demo](#App-Demo)
 - [Requirments](#Requirments)
 - [Set-up](#set-up)
@@ -27,31 +27,31 @@ https://user-images.githubusercontent.com/108284950/218329685-c8b335ed-581a-4c37
 -	Minikube 
 -	Jenkins
 
-## Deployment
+## Deployment 🚀
 
 ### Docker
-1.	Open the git BASH Terminal, go inside your desired folder and run the following command:
+1.	Open the git BASH Terminal, go inside your desired folder and run the following command: 🧑‍💻
 ```bash
 git clone https://github.com/shiraz-messer/DevOps.git
 ```
-2.	Then you will have to go inside the "Devops" folder using the following command:
+2.	Then you will have to go inside the "Devops" folder using the following command: 🗃️
 ```bash
 cd Devops 
 ```
-3.	To build the docker
+3.	To build the docker 🏗️
 ```bash
 docker compose build
 ```
-4.	To run GeoLocation, you will have to enter the following command:
+4.	To run GeoLocation, you will have to enter the following command: 🌐
 ```bash
 docker compose up
 ```
-5.	Congratulations! You may access GeoLocation following address:
+5.	Congratulations! You may access GeoLocation following address: ✅
 ```bash
 http://localhost:8501/
 ```
 ###  Kubernets Minikube
-1.	To run the Minikube:
+1.	To run the Minikube:🏃
 ```bash
 minikube start
 ```
@@ -62,7 +62,7 @@ kubectl create -f service.yaml
 ```
 2.	To see that it worked successfully: 
 ```bash
-kubectl get  <> // pods / deployment / service 
+kubectl get  <TYPE> // pods / deployment / service 
 kubectl describe service geolocation 
 ```
 
