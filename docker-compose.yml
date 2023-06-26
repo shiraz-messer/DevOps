@@ -13,3 +13,8 @@ services:
       - '8501:8501'
     expose:
       - '8501'
+  logger:
+    build: logger
+    ports:
+      - '8000:8000'
+      - '8000'
