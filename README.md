@@ -10,7 +10,7 @@ Searching for cities in Israel in both Hebrew and English and displaying their l
 
 ## Table of Contents
 - [App Demo](#App-Demo)
-- [Requisites](#Requisites)
+- [Requirments](#Requirments)
 - [Set-up](#set-up)
 - [Deployment](#Deployment)
 - [Architecture](#architecture)
@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/108284950/218329685-c8b335ed-581a-4c37
 
 ## Deployment
 
-# Docker
+### Docker
 1.	Open the git BASH Terminal, go inside your desired folder and run the following command:
 ```bash
 git clone https://github.com/shiraz-messer/DevOps.git
@@ -50,7 +50,7 @@ docker compose up
 ```bash
 http://localhost:8501/
 ```
-#  Kubernets Minikube
+###  Kubernets Minikube
 1.	To run the Minikube:
 ```bash
 minikube start
