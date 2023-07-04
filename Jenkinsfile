@@ -42,14 +42,16 @@ pipeline {
   post {
     always {
     sh 'docker logout'
-    def mailRecipients = "shirazush000@gmail.com"
-    def jobName = currentBuild.fullDisplayName
-    emailext body: '''${SCRIPT, template="groovy-html.template"}''',
-        mimeType: 'text/html',
-        subject: "[Jenkins] ${jobName}",
-        to: "${mailRecipients}",
-        replyTo: "${mailRecipients}",
-        recipientProviders: [[$class: 'CulpritsRecipientProvider']]
+    mail body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "shirazush000@gmail.com";
+    // def mailRecipients = "shirazush000@gmail.com"
+    // def jobName = currentBuild.fullDisplayName
+    // emailext body: '''${SCRIPT, template="groovy-html.template"}''',
+    //     mimeType: 'text/html',
+    //     subject: "[Jenkins] ${jobName}",
+    //     to: "${mailRecipients}",
+    //     replyTo: "${mailRecipients}",
+      
+    //     recipientProviders: [[$class: 'CulpritsRecipientProvider']]
       // emailext body: 'The Pipeline ${currentBuild.currentResult}',
       //   subject: 'The Pipeline ${currentBuild.currentResult}',
       //   to: '${mail_list}'
