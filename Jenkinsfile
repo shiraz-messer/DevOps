@@ -16,6 +16,7 @@ pipeline {
     stage('Login') {
       steps {
         // sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+        sh 'echo hi'
       }
     }
     stage('Push') {
@@ -23,6 +24,7 @@ pipeline {
         // sh 'docker push messershiraz/devops-frontend'
         // sh 'docker push messershiraz/devops-backend'
         // sh 'docker push messershiraz/devops-logger'
+        sh 'echo hi'
       }
     }
     stage('Deploy locally') {
