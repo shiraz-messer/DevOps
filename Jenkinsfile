@@ -1,29 +1,28 @@
 pipeline {
   agent any
   environment {
-    mail_list = 'shirazush000@gmail.com;ophir472@gmail.com'
     DOCKERHUB_CREDENTIALS = credentials('dockerhub')
   }
   stages {
     stage('Docker Build') {
       steps {
         sh '''
-        docker build -t messershiraz/devops-frontend front/
-        docker build -t messershiraz/devops-backend app/
-        docker build -t messershiraz/devops-logger logger/
+        // docker build -t messershiraz/devops-frontend front/
+        // docker build -t messershiraz/devops-backend app/
+        // docker build -t messershiraz/devops-logger logger/
         '''
       }
     }
     stage('Login') {
       steps {
-        sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+        // sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
       }
     }
     stage('Push') {
       steps {
-        sh 'docker push messershiraz/devops-frontend'
-        sh 'docker push messershiraz/devops-backend'
-        sh 'docker push messershiraz/devops-logger'
+        // sh 'docker push messershiraz/devops-frontend'
+        // sh 'docker push messershiraz/devops-backend'
+        // sh 'docker push messershiraz/devops-logger'
       }
     }
     stage('Deploy locally') {
@@ -42,10 +41,18 @@ pipeline {
   }
   post {
     always {
-      sh 'docker logout'
-      emailext body: 'The Pipeline ${currentBuild.currentResult}',
-        subject: 'The Pipeline ${currentBuild.currentResult}',
-        to: '${mail_list}'
+    sh 'docker logout'
+    def mailRecipients = "shirazush000@gmail.com"
+    def jobName = currentBuild.fullDisplayName
+    emailext body: '''${SCRIPT, template="groovy-html.template"}''',
+        mimeType: 'text/html',
+        subject: "[Jenkins] ${jobName}",
+        to: "${mailRecipients}",
+        replyTo: "${mailRecipients}",
+        recipientProviders: [[$class: 'CulpritsRecipientProvider']]
+      // emailext body: 'The Pipeline ${currentBuild.currentResult}',
+      //   subject: 'The Pipeline ${currentBuild.currentResult}',
+      //   to: '${mail_list}'
     }
   }
 }
