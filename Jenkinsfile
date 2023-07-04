@@ -2,6 +2,7 @@ pipeline {
   agent any
   environment {
     mail_list = 'shirazush000@gmail.com;ophir472@gmail.com'
+    DOCKERHUB_CREDENTIALS = credentials('dockerhub')
   }
   stages {
     stage('Docker Build') {
