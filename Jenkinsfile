@@ -47,9 +47,9 @@ pipeline {
     sh 'docker logout'
     emailext body: '''${SCRIPT, template="groovy-html.template"}''',
         mimeType: 'text/html',
-        subject: "[Jenkins] ${currentBuild.fullDisplayName}",
+        subject: "[Jenkins] ${currentBuild.fullDisplayName} build ${currentBuild.currentResult}",
         to: "messershiraz@gmail.com;ophir472@gmail.com",
-        replyTo: "messershiraz@gmail.com"
+        replyTo: "shirazush000@gmail.com"
 
       
     //     recipientProviders: [[$class: 'CulpritsRecipientProvider']]
