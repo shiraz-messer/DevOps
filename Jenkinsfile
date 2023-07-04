@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    mail_list = shirazush000@gmail.com;ophir472@gmail.com
+    mail_list = 'shirazush000@gmail.com;ophir472@gmail.com'
   }
   stages {
     stage('Docker Build') {
