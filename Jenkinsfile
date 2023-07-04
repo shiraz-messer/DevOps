@@ -54,6 +54,6 @@ pipeline {
       // emailext body: 'The Pipeline ${currentBuild.currentResult}',
       //   subject: 'The Pipeline ${currentBuild.currentResult}',
       //   to: '${mail_list}'
-    }
+    //}
   }
 }
