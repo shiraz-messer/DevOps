@@ -49,6 +49,7 @@ pipeline {
         subject: "[Jenkins] ${currentBuild.fullDisplayName}",
         to: "shirazush000@gmail.com",
         replyTo: "shirazush000@gmail.com"
+
       
     //     recipientProviders: [[$class: 'CulpritsRecipientProvider']]
       // emailext body: 'The Pipeline ${currentBuild.currentResult}',
