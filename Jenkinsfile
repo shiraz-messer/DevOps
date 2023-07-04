@@ -39,18 +39,6 @@ pipeline {
         '''
       }
     }
-    stage('Testing') {
-      steps {
-        sh '''
-        # response = $(curl --write -out '%{http_code}'--silent--output /dev/null 127.0.0.1:8501)
-        # if [ $response -eq 200 ]
-        # then
-        # echo "Works as expected"
-        # else
-        #   exit 1 
-        '''
-      }
-    }
   }
   post {
     always {
