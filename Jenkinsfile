@@ -21,9 +21,9 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push devops-frontend'
-        sh 'docker push devops-backend'
-        sh 'docker push devops-logger'
+        sh 'docker push messershiraz/devops-frontend'
+        sh 'docker push messershiraz/devops-backend'
+        sh 'docker push messershiraz/devops-logger'
       }
     }
     stage('Deploy locally') {
