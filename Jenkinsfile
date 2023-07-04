@@ -7,9 +7,10 @@ pipeline {
     stage('Docker Build') {
       steps {
         sh '''
-        // docker build -t messershiraz/devops-frontend front/
-        // docker build -t messershiraz/devops-backend app/
-        // docker build -t messershiraz/devops-logger logger/
+        echo hi
+        # docker build -t messershiraz/devops-frontend front/
+        # docker build -t messershiraz/devops-backend app/
+        # docker build -t messershiraz/devops-logger logger/
         '''
       }
     }
