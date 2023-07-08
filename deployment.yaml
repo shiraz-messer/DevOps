@@ -16,9 +16,20 @@ spec:
     spec:
       containers:
       - name: geolocation
-        image: devops-frontend
-        imagePullPolicy: Never
+        image: docker.io/messershiraz/devops-frontend
+        imagePullPolicy: Always
         ports: 
         - containerPort: 8501
+      - name: geolocation-backend
+        image: docker.io/messershiraz/devops-backend
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 80
+      - name: geolocation-logger
+        image: docker.io/messershiraz/devops-logger
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 8000
+
 
   # kubectl apply -f deployment.yaml
