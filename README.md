@@ -8,7 +8,7 @@ This DevOps project is based on microservices architecture using Docker and Kube
 Our  GeoLocation App:
 Searching for cities in Israel in both Hebrew and English and displaying their locations on a map.
 
-## Presentation Link- Full devolopment proccess and implementation ✨
+## Presentation Link- Full devolopment process and implementation ✨
 https://tinyurl.com/DevOpsHIT
 
 ## Table of Contents 📝
@@ -76,10 +76,10 @@ run the 'Docker Jenkins' text file
 http://127.0.0.1:8080/job/test/indexing/console
 ```
 3.	Configure  Jenkins: 
-install the JavaMail API plugin.
+install the JavaMail API pluginand define credentials of dockderhub and gmail.
 4. Build pipeline:
-by using the Jenkinsfile as a source from https://github.com/shiraz-messer/DevOps.git
-6. Track the Building process and make sure it completed and a SUCCESS mail recieved.
+by using the https://github.com/shiraz-messer/DevOps.git address as a repository source. 
+5. Track the Building process and make sure it is completed and a SUCCESS mail is received.
 
 ### Complete CICD Proccess
 1.	 you will have to go inside the "cicd" folder:  🗃️
