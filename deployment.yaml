@@ -21,4 +21,4 @@ spec:
         ports: 
         - containerPort: 8501
 
-  # kubectl apply -f deployment.yaml
+  # kubectl create -f deployment.yaml

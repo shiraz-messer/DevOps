@@ -10,4 +10,4 @@ spec:
       port: 8502
       targetPort: 8501
   type: NodePort
-# kubectl apply -f service.yaml
+# kubectl create -f service.yaml
