@@ -76,23 +76,22 @@ run the 'Docker Jenkins' text file
 http://127.0.0.1:8080/job/test/indexing/console
 ```
 3.	Configure  Jenkins: 
-install the JavaMail API plugin
-4. Build pipeline
+install the JavaMail API plugin.
+4. Build pipeline:
 by using the Jenkinsfile as a source from https://github.com/shiraz-messer/DevOps.git
-5. Success
-6. Track the Building process and make sure it completed and a SUCCESS mail recieved
+6. Track the Building process and make sure it completed and a SUCCESS mail recieved.
 
 ### Complete CICD Proccess
-1.	 you will have to go inside the "cicd" folder  🗃️
+1.	 you will have to go inside the "cicd" folder:  🗃️
 ```bash
 cd cicd 
 ```
-2.	 run the deployment and service files by sell script in order to complete the CICD process 
+2.	 run the deployment and service files by sell script in order to complete the CICD process,
 run the 'run.sh' file:
 ```bash
  ./run.sh
 ```
-3.	port forwarding to access the app
+3.	port forwarding to access the app,
 run the 'run.sh' file:
 ```bash
 kubectl get pods
