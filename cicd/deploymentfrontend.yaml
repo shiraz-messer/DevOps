@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: geolocation-frontend
+  labels:
+    app: geolocation-frontend
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: geolocation-frontend
+  template:
+    metadata:
+      labels:
+          app: geolocation-frontend
+    spec:
+      containers:
+      - name: geolocation-frontend
+        image: docker.io/messershiraz/devops-frontend
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 8501
+
+
+  # kubectl apply -f deployment.yaml

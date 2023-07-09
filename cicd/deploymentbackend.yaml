@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: geolocation-backend
+  labels:
+    app: geolocation-backend
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: geolocation-backend
+  template:
+    metadata:
+      labels:
+          app: geolocation-backend
+    spec:
+      containers:
+      - name: geolocation-backend
+        image: docker.io/messershiraz/devops-backend
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 80

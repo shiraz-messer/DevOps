@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: geolocation-logger
+  labels:
+    app: geolocation-logger
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: geolocation-logger
+  template:
+    metadata:
+      labels:
+          app: geolocation-logger
+    spec:
+      containers:
+      - name: geolocation-logger
+        image: docker.io/messershiraz/devops-logger
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 8000
