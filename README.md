@@ -8,7 +8,7 @@ This DevOps project is based on microservices architecture using Docker and Kube
 Our  GeoLocation App:
 Searching for cities in Israel in both Hebrew and English and displaying their locations on a map.
 
-## Presentation Link- Full devolopment proccess and implementation
+## Presentation Link- Full devolopment proccess and implementation :bowtie:
 https://tinyurl.com/DevOpsHIT
 
 ## Table of Contents 📝
