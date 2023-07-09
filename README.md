@@ -76,7 +76,7 @@ run the 'Docker Jenkins' text file
 http://127.0.0.1:8080/job/test/indexing/console
 ```
 3.	Configure  Jenkins: 
-install the JavaMail API pluginand define credentials of dockderhub and gmail.
+install the JavaMail API plugin and define credentials of dockderhub and gmail.
 4. Build pipeline:
 by using the https://github.com/shiraz-messer/DevOps.git address as a repository source. 
 5. Track the Building process and make sure it is completed and a SUCCESS mail is received.
