@@ -100,7 +100,7 @@ kubectl get pods
 kubectl port-forward <FRONTEND-POD> 8501:8501
 ```
 * Port forwarding is used to establish a connection between your local machine and a pod running within a Kubernetes cluster.
-4. Now you can access the app once again!
+4. Now you can access the app once again!✅
 
 
 
