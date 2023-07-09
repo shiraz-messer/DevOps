@@ -8,7 +8,7 @@ This DevOps project is based on microservices architecture using Docker and Kube
 Our  GeoLocation App:
 Searching for cities in Israel in both Hebrew and English and displaying their locations on a map.
 
-## Presentation Link
+## Presentation Link- Full devolopment proccess and implementation
 https://tinyurl.com/DevOpsHIT
 
 ## Table of Contents 📝
@@ -68,6 +68,42 @@ kubectl create -f service.yaml
 kubectl get  <TYPE> // pods / deployment / service 
 kubectl describe service geolocation 
 ```
+### Jenkins
+1.	To run the Jenkins: 🏃
+run the 'Docker Jenkins' text file
+2.	 You may access Jenkins following address: ✅
+```bash
+http://127.0.0.1:8080/job/test/indexing/console
+```
+3.	Configure  Jenkins: 
+install the JavaMail API plugin
+4. Build pipeline
+by using the Jenkinsfile as a source from https://github.com/shiraz-messer/DevOps.git
+5. Success
+6. Track the Building process and make sure it completed and a SUCCESS mail recieved
+
+### Complete CICD Proccess
+1.	 you will have to go inside the "cicd" folder  🗃️
+```bash
+cd cicd 
+```
+2.	 run the deployment and service files by sell script in order to complete the CICD process 
+run the 'run.sh' file:
+```bash
+ ./run.sh
+```
+3.	port forwarding to access the app
+run the 'run.sh' file:
+```bash
+kubectl get pods
+```
+```bash
+kubectl port-forward <FRONTEND-POD> 8501:8501
+```
+* Port forwarding is used to establish a connection between your local machine and a pod running within a Kubernetes cluster.
+Now you can access the app once again!
+
+
 
 ## Architecture 🚧
 This project adheres to a microservice architecture. The primary components of this architecture are:
