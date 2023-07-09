@@ -81,17 +81,17 @@ install the JavaMail API plugin and define credentials of dockderhub and gmail.
 by using the https://github.com/shiraz-messer/DevOps.git address as a repository source. 
 5. Track the Building process and make sure it is completed and a SUCCESS mail is received.
 
-### Complete CICD Proccess
-1.	 you will have to go inside the "cicd" folder:  🗃️
+### Complete CICD Process Using Kubernetes
+1.	 You will have to go inside the "cicd" folder:  🗃️
 ```bash
 cd cicd 
 ```
-2.	 run the deployment and service files by sell script in order to complete the CICD process,
+2.	 Run the deployment and service files by sell script in order to complete the CICD process,
 run the 'run.sh' file:
 ```bash
  ./run.sh
 ```
-3.	port forwarding to access the app,
+3.	Port forwarding to access the app,
 run the 'run.sh' file:
 ```bash
 kubectl get pods
@@ -134,6 +134,7 @@ Jenkins: automation tool used for continuous integration and delivery, and the J
 - Jenkins:
   - CI/CD Pipline 
   - Jenkins Job
+  - JavaMail
 
 ## App-Design 🎨
 ![image](https://user-images.githubusercontent.com/108284950/218329974-d02f1b26-5b0f-43a9-860a-43f03f63b803.png)
